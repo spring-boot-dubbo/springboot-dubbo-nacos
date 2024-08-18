@@ -1,0 +1,11 @@
+server:
+  port: 8888
+
+dubbo:
+  application:
+    name: springboot-dubbo-nacos-consumer
+  protocol:
+    name: dubbo
+    port: -1  # -1 表示自动分配端口
+  registry:
+    address: nacos://${nacos.address:127.0.0.1}:8848
